@@ -1,0 +1,765 @@
+
+@font-face {
+    font-family: 'Proxima';
+    src: url(/Fonts/ProximaNova-Regular.otf);
+}
+
+@font-face {
+    font-family: 'ProximaBold';
+    src: url(/Fonts/Proxima\ Nova\ Bold.otf);
+}
+
+*{
+    padding: 0;
+    margin:0;
+    
+}
+/*This .header is for the header container */
+.header{
+    max-width: 100%;
+    height: 50px;
+    display: block;
+    background-color: #bb8888;
+    
+}
+
+/*This .cont-logo is for the Logo */
+.cont-logo{
+    display: flex;
+	justify-content: center;
+    margin-top: 20px;  
+    cursor: pointer; 
+}
+
+body, html{
+    overflow-x: hidden;
+    }   
+    
+.container ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-left: -50px;
+
+}
+.container li{
+    margin-left: 22px;
+    font-family: Proxima;
+}
+
+.container a{
+    text-decoration: none;
+    color: #cdb5a2;
+    transition: all .25s linear;
+}
+
+.container a:hover{
+    color: #7a7a7a;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 235px;
+    background-color: #cdb5a2;
+    margin-top: 150px;
+}
+.col-1 .cont-image{
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    margin-left: 100px;
+}
+
+.cont-placeholder{
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    top: 55%;
+    margin-left: 55%;
+    height: auto;
+    display: flex;
+}
+.subs-overlay{
+    z-index: 2;
+    position: absolute;
+    margin-left: 61%;
+    margin-top: -5%;
+	width:25%;
+	color:#bb8888;
+    font-size: 20px;
+    font-family: ProximaBold;
+    text-align: justify;
+}
+
+input[type=text]{
+	width:20%;
+	position: absolute;
+	width:25%;
+	height: 60px;
+	z-index: 3;
+	margin-left: 61%;
+	margin-top: 80px;
+	outline: none;
+	background-color: #dab6a9;
+	color: white;
+	border: none;
+}
+
+::placeholder{
+    color: white;
+}
+.btn-container{
+    position: absolute;
+    z-index: 5;
+    background-color: #9f7163;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    text-align: center ;
+    padding: 5px 0;
+    width:20%;
+	width:25%;
+	height: 60px;
+	z-index: 34;
+	margin-left: 61%;
+	margin-top: 180px;
+	outline: none;
+}
+
+.btn-container a{
+        color: white;
+        text-decoration: none;
+        font-family: Proxima;
+        font-size: 20px;
+}
+
+.Aim {
+	position: absolute;
+	width:36%;
+	z-index: 2;
+	margin-left: 105px;
+	top: 85%;
+	color:#bb8888;
+	text-align: justify;
+    font-size: 18px;
+    font-family: Proxima;
+}
+
+section h2{
+    position: absolute;
+	justify-content: center;
+	top: 135%;
+	color:	#9f7163;
+    margin-left: 43%;
+    font-family: ProximaBold;
+}
+
+section#latest ul{
+	list-style-type: none;
+    position: absolute;
+    top: 150%;
+
+}
+
+section#latest li{
+    float: left;
+    width: 10%;
+    height: auto;
+    padding: 0 100px;
+    margin-left: 40px;
+    top: 10%;
+    box-shadow: #7a7a7a;
+
+}
+
+section#latest li::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+#latest li h3{
+	text-align: left;
+	color: #9f7163;
+	font-size: 15px;
+    font-family: ProximaBold;
+	width: 120px;
+}
+section#lowerpart h2{
+	position: absolute;
+	width:20%;
+	height: 30px;
+	z-index: 9;
+	top: 230%;
+    margin-left: 42%;
+	background-color: #9f7163;
+	border: none;
+	text-transform: uppercase;
+	text-align: center ;
+	padding: 15px 0 0 0;
+	font-size: 18px;
+}
+section#lowerpart h2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.behind-scene {
+	position: absolute;
+	top: 250%;
+	margin-left: 15%;
+	max-width: 100%;
+	height: auto;
+}
+
+#seams{
+	position: absolute;
+	top: 258%;
+	width:50%;
+	z-index: 4;
+	margin-left: 68%;
+	color:#bb8888;
+	font-size: 20px;
+	text-transform: uppercase;
+    font-family: ProximaBold;
+}
+
+section#lowerpart p{
+	position: absolute;
+	width:40%;
+	z-index: 4;
+	margin-left: 55%;
+    top: 268%;
+	color:#bb8888;
+	text-align: center;
+	font-size: 16px;
+    font-family: Proxima;
+
+}
+
+section#AboutUs p{
+	position: absolute;
+	width:40%;
+	z-index: 4;
+	margin-left: 15%;
+    top: 300%;
+	color:#bb8888;
+	text-align: justify;
+	font-size: 20px;
+    font-family: ProximaBold;
+}
+section#AboutUs ul#menus{
+	position: absolute;
+	width:40%;
+	z-index: 4;
+	margin-left: 12%;
+    top: 309%;
+	color:#bb8888;
+	text-align: justify;
+	font-size: 15px;
+	list-style-type: none;
+    font-family: Proxima;
+   
+}
+section#AboutUs ul#menus a{
+	color: #bb8888;
+    text-decoration: none;
+}
+section#AboutUs ul#menus a:hover{
+    color: #7a7a7a;
+}
+
+hr.new1{
+
+	position: absolute;
+	width:18%;
+	z-index: 4;
+	margin-left: 5%;
+    top: 307%;
+	border: 1px solid #bb8888;
+	margin-left: 15%;
+}
+
+section#AboutUs ul#menus2{
+    position: absolute;
+	width:40%;
+	z-index: 4;
+	margin-left: 28%;
+    top: 309%;
+	color:#bb8888;
+	text-align: justify;
+	font-size: 15px;
+	list-style-type: none;
+    font-family: Proxima;
+}
+
+section#AboutUs ul#menus2 a{
+	color: #bb8888;
+    text-decoration: none;
+}
+
+section#AboutUs ul#menus2 a:hover{
+    color: #7a7a7a;
+}
+
+section#AboutUs ul#socials{
+	position: absolute;
+	width:40%;
+	z-index: 4;
+	margin-left:75%;
+    top: 309%;
+	text-align: justify;
+	font-size: 15px;
+	list-style-type: none;
+	display: flex;
+	padding-top: 10px;
+}
+
+section#AboutUs ul#socials li{
+    padding: 20px 20px;
+}
+
+footer{
+    position: absolute;
+	width: 70%;
+    max-width: 100%;
+    height: 50px;
+    display: block;
+	z-index: 4;
+    top: 330%;
+    background-color: #bb8888;
+    color: white;
+    text-align: left;
+    padding: 0 15%;
+    text-transform: lowercase;
+    font-family: Proxima;
+}
+
+.inkafoot{
+    position: absolute;
+	width:75%;
+	z-index: 10;
+    top: 330%;
+    text-align: right;
+    font-family: Proxima;
+    color: white;
+    margin-left: 16%;
+}
+
+.endfoot{
+    position: absolute;
+	width:100%;
+	z-index: 4;
+    top: 338%;
+    height: 7%;
+    background-color: #cdb5a2;
+}
+
+li.facebook{
+   filter: invert(79%) sepia(11%) saturate(554%) hue-rotate(344deg) brightness(95%) contrast(83%);
+}
+li.instagram{
+    filter: invert(79%) sepia(11%) saturate(554%) hue-rotate(344deg) brightness(95%) contrast(83%);
+}
+
+/* Tablet Responsive */
+
+
+@media only screen and (max-width:700px) {
+
+    .banner{
+        width: 100%;
+        height:250px;
+    }
+
+  .container ul{
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    right: auto;
+    z-index: 6;
+  }
+
+    .cont-image{
+        z-index: 7;
+        position: absolute;
+        top: 100%;
+        margin-left: 100px;
+        margin-top: 40px;     
+    }
+
+    .col-2 .cont-placeholder{
+        z-index: 7;
+        position: absolute;
+        top: 90%;
+        margin-left: 100px;
+        margin-top: 40px;   
+    }
+
+    .subs-overlay{
+        z-index: 7;
+        position: absolute;
+        top: 105%;
+        margin-left: 175px;
+        margin-top: 40px; 
+        width: 50%;
+    }
+
+    input[type=text]{
+        z-index: 8;
+        position: absolute;
+        top: 135%;
+        margin-left: 175px;
+        margin-top: 40px; 
+        width: 50%;
+    }
+
+    .btn-container{
+        z-index: 8;
+        position: absolute;
+        top: 160%;
+        margin-left: 175px;
+        margin-top: 10px; 
+        width: 50%;
+    }
+    .Aim{
+        z-index: 8;
+        position: absolute;
+        top: 180%;
+        margin-left: 110px;
+        margin-top: 40px; 
+        width: 69%;
+    }
+    section h2{
+        z-index: 8;
+        position: absolute;
+        top: 230%;
+        margin-left: 260px;
+        margin-top: 60px; 
+        width: 69%;
+    }
+    
+    section#latest ul{
+        position: absolute;
+        top: 250%;
+        margin-left: 25px;
+    }
+
+    section#latest li.img2{
+        position: absolute;
+        top: 100%;
+    }
+    section#latest li.img3{
+        position: absolute;
+        top: 205%;
+    }
+    #latest li h3{
+        text-align: center;
+        color: #9f7163;
+        font-size: 15px;
+        width: 250px;
+        margin-left: 25px;
+    }
+
+    section#lowerpart h2{
+        top: 510%;
+        margin-left: 230px;
+        margin-top: 60px; 
+        width: 30%;
+    }
+
+    .behind-scene {
+        top: 525%;
+        margin-left: 17%;
+        margin-top: 60px; 
+        width: 69%;
+    }
+    
+    #seams{
+        top: 585%;
+        margin-left: 35%;
+        margin-top: 60px; 
+        width: 69%;
+    }
+    
+    section#lowerpart p{
+        top: 600%;
+        margin-left: 17%;
+        margin-top: 60px; 
+        width: 63%;
+        padding-bottom: 25px;
+    }
+
+    section#AboutUs p{
+        top: 630%;
+        margin-left: 42%;
+        margin-top: 60px; 
+        width: 63%;
+        padding-bottom: 25px;
+    }
+    section#AboutUs ul#menus {
+        top: 645%;
+        width: 75%;
+        margin-left: 7%;
+        display:flex;
+        list-style: none;
+    }
+    section#AboutUs ul#menus li{
+    padding: 20px 20px;
+
+    }
+
+    hr.new1{
+        top: 625.5%;
+        justify-content: center;
+        margin-left: 10%;
+        margin-top: 10%; 
+        width: 78%; 
+    }
+    section#AboutUs ul#menus2{
+        top: 655%;
+        width: 75%;
+        margin-left: 28%;
+        display:flex;
+        list-style: none;
+    }
+    section#AboutUs ul#menus2 li{
+        padding: 0 20px;
+        }
+
+    section#AboutUs ul#socials{
+        top: 658%;
+        width: 75%;
+        margin-left: 28%;
+        display:flex;
+        list-style: none;
+    }
+    footer{
+        top: 680%;
+        width: 100%;
+        display:flex;
+        list-style: none;
+        padding: 0 5%;
+    }
+
+    .inkafoot{
+        top: 680%;
+        width: 100%;
+        display:flex;
+        list-style: none;
+        padding: 0 60%;
+    }
+    .endfoot{
+        top: 689.25%;
+        width: 100%;
+        display:flex;
+        list-style: none;
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width:488px) {
+
+    .header{
+        width:488px; 
+    }
+
+
+    .container ul{
+
+        width: 488px;
+        position: absolute;
+        top: 22%;
+        z-index: 2;
+    }
+
+    .banner{
+        position: absolute;
+        width: 100%;
+        height:150px;
+        top: 18%;
+    }
+
+    .cont-image{
+        position: absolute; 
+        top: 100%;
+        width: 300px;
+    }
+
+    .col-2 .cont-placeholder{
+        position: absolute;
+        margin-left: 50px;
+        top: 65%;
+        width:100px;
+        height:400px;
+    }
+    .subs-overlay{
+        z-index: 7;
+        position: absolute;
+        top: 75%;
+        margin-left: 130px;
+        margin-top: 40px; 
+        width: 50%;
+        font-size: 15px;
+    }
+
+    input[type=text]{
+        z-index: 8;
+        position: absolute;
+        top: 90%;
+        margin-left: 130px;
+        margin-top: 50px; 
+        width: 50%;
+    }
+
+    .btn-container{
+        z-index: 8;
+        position: absolute;
+        top: 110%;
+        margin-left: 130px;
+        margin-top: 50px; 
+        width: 50%;
+    }
+
+    .Aim{
+        z-index: 8;
+        position: absolute;
+        top: 137%;
+        margin-left: 80px;
+        margin-top: 40px; 
+        width: 69%;
+        font-size: 15px;;
+    }
+
+    section h2{
+        z-index: 8;
+        position: absolute;
+        top: 185%;
+        margin-left: 150px;
+        width: 69%;
+    }
+
+    section#latest ul{
+        position: absolute;
+        top: 205%;
+        width: 200px;
+        margin-left: -80px;
+    }
+
+    section#latest li.img2{
+        position: absolute;
+        top: 100%;
+    }
+    section#latest li.img3{
+        position: absolute;
+        top: 200%;
+    }
+    #latest li h3{
+        text-align: center;
+        color: #9f7163;
+        font-size: 13px;
+        width: 245px;
+        top: 200%;
+    }
+
+    section#lowerpart h2{
+        top: 455%;
+        margin-left: 145px; 
+        width: 40%;
+    }
+
+    .behind-scene {
+        top: 465%;
+        margin-left: 23px;
+        width: 200px;
+    }
+    
+    #seams{
+        top: 525%;
+        margin-left: 32%;
+        width: 69%;
+    }
+    
+    section#lowerpart p{
+        top: 535%;
+        margin-left: 10%;
+        width: 80%;
+        padding-bottom: 25px;
+    }
+
+    hr.new1{
+        top: 570%;
+        margin-left: 15%;
+        width: 68%; 
+    }
+
+    section#AboutUs p{
+        top:572%;
+        margin-left: 40%;
+        width: 63%;
+        padding-bottom: 25px;
+    }
+    section#AboutUs ul#menus {
+        top: 585%;
+        width: 100%;
+        margin-left: -5%;
+        display:flex;
+        list-style: none;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    section#AboutUs ul#menus li{
+    padding: 20px 20px;
+    }
+
+    section#AboutUs ul#menus2{
+        top: 595%;
+        width: 100%;
+        margin-left: 20%;
+        display:flex;
+        list-style: none;
+        font-size: 13px;
+    }
+    section#AboutUs ul#menus2 li{
+        padding: 0 20px;
+        }
+
+    section#AboutUs ul#socials{
+        top: 598%;
+        width: 75%;
+        margin-left: 22%;
+        display:flex;
+        list-style: none;
+    }
+
+    footer{
+        top: 615%;
+        width: 100%;
+        display:flex;
+        list-style: none;
+        padding: 0 5%;
+        font-size: 12px;
+    }
+
+    .inkafoot{
+        top: 615%;
+        width: 100%;
+        display:flex;
+        list-style: none;
+        padding: 0 60%;
+        font-size: 12px;
+    }
+    .endfoot{
+        top: 620%;
+        width: 100%;
+        display:flex;
+        list-style: none;
+        padding: 0 5%;
+        height: 50px;
+    }
+
+}
